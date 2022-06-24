@@ -25,10 +25,16 @@ Partial Class Form1
         Me.readFileLabel = New System.Windows.Forms.Label()
         Me.titleLabel = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.fileNameBox = New System.Windows.Forms.TextBox()
-        Me.readTextFileRichBox = New System.Windows.Forms.RichTextBox()
-        Me.readButton = New System.Windows.Forms.Button()
         Me.closeButton = New System.Windows.Forms.Button()
+        Me.readButton = New System.Windows.Forms.Button()
+        Me.fullnameBox = New System.Windows.Forms.TextBox()
+        Me.fileNameBox = New System.Windows.Forms.TextBox()
+        Me.detailsLabel = New System.Windows.Forms.Label()
+        Me.studentNoBox = New System.Windows.Forms.TextBox()
+        Me.courseYrSecbox = New System.Windows.Forms.TextBox()
+        Me.birthGenderBox = New System.Windows.Forms.TextBox()
+        Me.addressBox = New System.Windows.Forms.TextBox()
+        Me.mobileNumBox = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -57,56 +63,118 @@ Partial Class Form1
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Panel1.Controls.Add(Me.closeButton)
         Me.Panel1.Controls.Add(Me.readButton)
-        Me.Panel1.Controls.Add(Me.readTextFileRichBox)
+        Me.Panel1.Controls.Add(Me.addressBox)
+        Me.Panel1.Controls.Add(Me.birthGenderBox)
+        Me.Panel1.Controls.Add(Me.mobileNumBox)
+        Me.Panel1.Controls.Add(Me.courseYrSecbox)
+        Me.Panel1.Controls.Add(Me.studentNoBox)
+        Me.Panel1.Controls.Add(Me.fullnameBox)
         Me.Panel1.Controls.Add(Me.fileNameBox)
+        Me.Panel1.Controls.Add(Me.detailsLabel)
         Me.Panel1.Controls.Add(Me.readFileLabel)
         Me.Panel1.Location = New System.Drawing.Point(12, 53)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(488, 352)
+        Me.Panel1.Size = New System.Drawing.Size(488, 325)
         Me.Panel1.TabIndex = 1
-        '
-        'fileNameBox
-        '
-        Me.fileNameBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.fileNameBox.Location = New System.Drawing.Point(84, 11)
-        Me.fileNameBox.Name = "fileNameBox"
-        Me.fileNameBox.Size = New System.Drawing.Size(120, 23)
-        Me.fileNameBox.TabIndex = 1
-        Me.fileNameBox.Text = "Enter filename"
-        '
-        'readTextFileRichBox
-        '
-        Me.readTextFileRichBox.Location = New System.Drawing.Point(5, 49)
-        Me.readTextFileRichBox.Name = "readTextFileRichBox"
-        Me.readTextFileRichBox.Size = New System.Drawing.Size(476, 237)
-        Me.readTextFileRichBox.TabIndex = 2
-        Me.readTextFileRichBox.Text = ""
-        '
-        'readButton
-        '
-        Me.readButton.Font = New System.Drawing.Font("Microsoft JhengHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.readButton.Location = New System.Drawing.Point(285, 298)
-        Me.readButton.Name = "readButton"
-        Me.readButton.Size = New System.Drawing.Size(89, 39)
-        Me.readButton.TabIndex = 3
-        Me.readButton.Text = "Read"
-        Me.readButton.UseVisualStyleBackColor = True
         '
         'closeButton
         '
         Me.closeButton.Font = New System.Drawing.Font("Microsoft JhengHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.closeButton.Location = New System.Drawing.Point(380, 298)
+        Me.closeButton.Location = New System.Drawing.Point(380, 263)
         Me.closeButton.Name = "closeButton"
         Me.closeButton.Size = New System.Drawing.Size(89, 39)
         Me.closeButton.TabIndex = 3
         Me.closeButton.Text = "Close"
         Me.closeButton.UseVisualStyleBackColor = True
         '
+        'readButton
+        '
+        Me.readButton.Font = New System.Drawing.Font("Microsoft JhengHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.readButton.Location = New System.Drawing.Point(285, 263)
+        Me.readButton.Name = "readButton"
+        Me.readButton.Size = New System.Drawing.Size(89, 39)
+        Me.readButton.TabIndex = 3
+        Me.readButton.Text = "Read"
+        Me.readButton.UseVisualStyleBackColor = True
+        '
+        'fullnameBox
+        '
+        Me.fullnameBox.Font = New System.Drawing.Font("Microsoft JhengHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.fullnameBox.Location = New System.Drawing.Point(6, 71)
+        Me.fullnameBox.Name = "fullnameBox"
+        Me.fullnameBox.Size = New System.Drawing.Size(475, 24)
+        Me.fullnameBox.TabIndex = 1
+        Me.fullnameBox.Text = "Fullname"
+        '
+        'fileNameBox
+        '
+        Me.fileNameBox.Font = New System.Drawing.Font("Microsoft JhengHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.fileNameBox.Location = New System.Drawing.Point(84, 11)
+        Me.fileNameBox.Name = "fileNameBox"
+        Me.fileNameBox.Size = New System.Drawing.Size(120, 24)
+        Me.fileNameBox.TabIndex = 1
+        Me.fileNameBox.Text = "Enter filename"
+        '
+        'detailsLabel
+        '
+        Me.detailsLabel.AutoSize = True
+        Me.detailsLabel.Font = New System.Drawing.Font("Microsoft JhengHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.detailsLabel.Location = New System.Drawing.Point(2, 48)
+        Me.detailsLabel.Name = "detailsLabel"
+        Me.detailsLabel.Size = New System.Drawing.Size(65, 20)
+        Me.detailsLabel.TabIndex = 0
+        Me.detailsLabel.Text = "Details:"
+        '
+        'studentNoBox
+        '
+        Me.studentNoBox.Font = New System.Drawing.Font("Microsoft JhengHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.studentNoBox.Location = New System.Drawing.Point(6, 101)
+        Me.studentNoBox.Name = "studentNoBox"
+        Me.studentNoBox.Size = New System.Drawing.Size(475, 24)
+        Me.studentNoBox.TabIndex = 1
+        Me.studentNoBox.Text = "Student Number"
+        '
+        'courseYrSecbox
+        '
+        Me.courseYrSecbox.Font = New System.Drawing.Font("Microsoft JhengHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.courseYrSecbox.Location = New System.Drawing.Point(6, 131)
+        Me.courseYrSecbox.Name = "courseYrSecbox"
+        Me.courseYrSecbox.Size = New System.Drawing.Size(475, 24)
+        Me.courseYrSecbox.TabIndex = 1
+        Me.courseYrSecbox.Text = "Course/Year/Section"
+        '
+        'birthGenderBox
+        '
+        Me.birthGenderBox.Font = New System.Drawing.Font("Microsoft JhengHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.birthGenderBox.Location = New System.Drawing.Point(6, 191)
+        Me.birthGenderBox.Name = "birthGenderBox"
+        Me.birthGenderBox.Size = New System.Drawing.Size(475, 24)
+        Me.birthGenderBox.TabIndex = 1
+        Me.birthGenderBox.Text = "Birthdate/Gender"
+        '
+        'addressBox
+        '
+        Me.addressBox.Font = New System.Drawing.Font("Microsoft JhengHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.addressBox.Location = New System.Drawing.Point(6, 221)
+        Me.addressBox.Name = "addressBox"
+        Me.addressBox.Size = New System.Drawing.Size(475, 24)
+        Me.addressBox.TabIndex = 1
+        Me.addressBox.Text = "Address"
+        '
+        'mobileNumBox
+        '
+        Me.mobileNumBox.Font = New System.Drawing.Font("Microsoft JhengHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mobileNumBox.Location = New System.Drawing.Point(6, 161)
+        Me.mobileNumBox.Name = "mobileNumBox"
+        Me.mobileNumBox.Size = New System.Drawing.Size(475, 24)
+        Me.mobileNumBox.TabIndex = 1
+        Me.mobileNumBox.Text = "Mobile Number"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(512, 417)
+        Me.ClientSize = New System.Drawing.Size(512, 389)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.titleLabel)
         Me.Name = "Form1"
@@ -123,6 +191,12 @@ Partial Class Form1
     Friend WithEvents Panel1 As Panel
     Friend WithEvents closeButton As Button
     Friend WithEvents readButton As Button
-    Friend WithEvents readTextFileRichBox As RichTextBox
     Friend WithEvents fileNameBox As TextBox
+    Friend WithEvents detailsLabel As Label
+    Friend WithEvents fullnameBox As TextBox
+    Friend WithEvents addressBox As TextBox
+    Friend WithEvents birthGenderBox As TextBox
+    Friend WithEvents courseYrSecbox As TextBox
+    Friend WithEvents studentNoBox As TextBox
+    Friend WithEvents mobileNumBox As TextBox
 End Class
