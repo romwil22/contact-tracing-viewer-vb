@@ -80,7 +80,7 @@ Partial Class Form1
         'closeButton
         '
         Me.closeButton.Font = New System.Drawing.Font("Microsoft JhengHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.closeButton.Location = New System.Drawing.Point(380, 263)
+        Me.closeButton.Location = New System.Drawing.Point(392, 263)
         Me.closeButton.Name = "closeButton"
         Me.closeButton.Size = New System.Drawing.Size(89, 39)
         Me.closeButton.TabIndex = 3
@@ -90,7 +90,7 @@ Partial Class Form1
         'readButton
         '
         Me.readButton.Font = New System.Drawing.Font("Microsoft JhengHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.readButton.Location = New System.Drawing.Point(285, 263)
+        Me.readButton.Location = New System.Drawing.Point(287, 263)
         Me.readButton.Name = "readButton"
         Me.readButton.Size = New System.Drawing.Size(89, 39)
         Me.readButton.TabIndex = 3
