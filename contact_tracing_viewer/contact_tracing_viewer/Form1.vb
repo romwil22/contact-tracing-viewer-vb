@@ -10,7 +10,7 @@
         Else
             readFileLabel.ForeColor = Color.Black
             fileLastName = ""
-            fileLastName += fileNameBox.Text + ".txt"
+            fileLastName += fileNameBox.Text.ToUpper() + ".txt"
 
             If System.IO.File.Exists("C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec3\contact-tracing-vb\vb_contract_tracing\vb_contract_tracing\bin\Debug\" + fileLastName) Then
                 studentReader = My.Computer.FileSystem.OpenTextFileReader("C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec3\contact-tracing-vb\vb_contract_tracing\vb_contract_tracing\bin\Debug\" + fileLastName)
@@ -39,9 +39,7 @@
                 address += " " + studentReader.ReadLine()
                 addressBox.Text = address
             Else
-                'MessageBox.Show("Text file not in directory, try again.", "Information")
-                MessageBox.Show(fileLastName)
-
+                MessageBox.Show(fileLastName + " not in directory, try again.", "Information")
             End If
 
 
