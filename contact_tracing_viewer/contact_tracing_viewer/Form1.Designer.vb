@@ -181,7 +181,10 @@ Partial Class Form1
         Me.ClientSize = New System.Drawing.Size(512, 389)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.titleLabel)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Contact Tracing Viewer"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
