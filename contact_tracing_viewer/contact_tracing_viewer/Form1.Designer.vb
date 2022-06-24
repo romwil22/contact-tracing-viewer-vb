@@ -60,6 +60,7 @@ Partial Class Form1
         '
         'Panel1
         '
+        Me.Panel1.BackColor = System.Drawing.SystemColors.Menu
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Panel1.Controls.Add(Me.closeButton)
         Me.Panel1.Controls.Add(Me.readButton)
@@ -79,23 +80,25 @@ Partial Class Form1
         '
         'closeButton
         '
+        Me.closeButton.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.closeButton.Font = New System.Drawing.Font("Microsoft JhengHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.closeButton.Location = New System.Drawing.Point(392, 263)
         Me.closeButton.Name = "closeButton"
         Me.closeButton.Size = New System.Drawing.Size(89, 39)
         Me.closeButton.TabIndex = 3
         Me.closeButton.Text = "Close"
-        Me.closeButton.UseVisualStyleBackColor = True
+        Me.closeButton.UseVisualStyleBackColor = False
         '
         'readButton
         '
+        Me.readButton.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.readButton.Font = New System.Drawing.Font("Microsoft JhengHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.readButton.Location = New System.Drawing.Point(287, 263)
         Me.readButton.Name = "readButton"
         Me.readButton.Size = New System.Drawing.Size(89, 39)
         Me.readButton.TabIndex = 3
         Me.readButton.Text = "Read"
-        Me.readButton.UseVisualStyleBackColor = True
+        Me.readButton.UseVisualStyleBackColor = False
         '
         'fullnameBox
         '
@@ -174,6 +177,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.Highlight
         Me.ClientSize = New System.Drawing.Size(512, 389)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.titleLabel)
